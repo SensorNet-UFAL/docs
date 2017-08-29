@@ -29,7 +29,7 @@ Atualizar repositório github:
 ``` git push -u origin master ```
 ## Outros Commits
 
-Diferente do commit anterios, assumimos que respositórios já estão conectados.
+Diferente do commit anterios, assumimos que repositórios já estão conectados.
 
 Adicionando arquivo ao commit:
 
@@ -42,3 +42,44 @@ Adicionando todos os arquivos ao commit:
 Atualizar repositório github:
 
 ``` git push```
+
+## Gitignore
+
+Como sabemos é comum geramos alguns arquivos temporários ou arquivos de compilação, para evitar poluição do repositório é recomendado utilização de gitignore.
+
+
+### Modo de uso
+
+Basta criar um arquivo chamado ```.gitignore```, aplicando as regras presentes neste arquivo para todos os arquivos, pastas e sub-pastas localizados na pasta no qual o ```.gitignore``` está, é geralmente criado na pasta raiz.
+
+### Exemplo
+Neste exemplo temos um ```.gitignore``` usado geralmente em projetos Java.
+```
+# Created by https://www.gitignore.io/api/java
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# End of https://www.gitignore.io/api/java
+```
